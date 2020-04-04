@@ -1,0 +1,412 @@
+$date
+	Sat Apr  4 01:09:51 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testeAssincrono $end
+$var wire 2 ! ackPER1 [1:0] $end
+$var wire 2 " ackPER2 [1:0] $end
+$var wire 16 # dataCPU1 [15:0] $end
+$var wire 16 $ dataCPU2 [15:0] $end
+$var wire 2 % sendCPU1 [1:0] $end
+$var wire 2 & sendCPU2 [1:0] $end
+$var reg 1 ' clkCPU $end
+$var reg 1 ( clkPER1 $end
+$var reg 1 ) clkPER2 $end
+$var reg 1 * rst $end
+$scope module cpu $end
+$var wire 1 + clkCPU $end
+$var wire 2 , inAck1 [1:0] $end
+$var wire 2 - inAck2 [1:0] $end
+$var wire 1 . rstCPU $end
+$var reg 1 / currentStateCPU $end
+$var reg 1 0 nextStateCPU $end
+$var reg 16 1 outData1 [15:0] $end
+$var reg 16 2 outData2 [15:0] $end
+$var reg 2 3 outSend1 [1:0] $end
+$var reg 2 4 outSend2 [1:0] $end
+$upscope $end
+$scope module per1 $end
+$var wire 1 5 clkPER $end
+$var wire 16 6 inData [15:0] $end
+$var wire 2 7 inSend [1:0] $end
+$var wire 1 . rstPER $end
+$var reg 1 8 currentStatePER $end
+$var reg 16 9 dataPER [15:0] $end
+$var reg 1 : nextStatePER $end
+$var reg 2 ; outAck [1:0] $end
+$upscope $end
+$scope module per2 $end
+$var wire 1 < clkPER $end
+$var wire 16 = inData [15:0] $end
+$var wire 2 > inSend [1:0] $end
+$var wire 1 . rstPER $end
+$var reg 1 ? currentStatePER $end
+$var reg 16 @ dataPER [15:0] $end
+$var reg 1 A nextStatePER $end
+$var reg 2 B outAck [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 B
+xA
+bx @
+x?
+b0 >
+bx =
+0<
+b0 ;
+x:
+bx 9
+x8
+b0 7
+bx 6
+05
+b0 4
+b0 3
+bx 2
+bx 1
+x0
+x/
+1.
+b0 -
+b0 ,
+0+
+1*
+0)
+0(
+0'
+b0 &
+b0 %
+bx $
+bx #
+b0 "
+b0 !
+$end
+#8000
+0A
+0?
+1)
+1<
+#10000
+00
+0/
+1'
+1+
+#16000
+0)
+0<
+#17000
+0:
+08
+1(
+15
+#20000
+0'
+0+
+#24000
+1)
+1<
+#30000
+1'
+1+
+#32000
+0)
+0<
+#34000
+0(
+05
+#40000
+1)
+1<
+0'
+0+
+#48000
+0)
+0<
+#50000
+1'
+1+
+#51000
+1(
+15
+#56000
+1)
+1<
+#60000
+0'
+0+
+#64000
+0)
+0<
+#68000
+0(
+05
+#70000
+1'
+1+
+#72000
+1)
+1<
+#80000
+0)
+0<
+0'
+0+
+#85000
+1(
+15
+#88000
+1)
+1<
+#90000
+1'
+1+
+#96000
+0)
+0<
+#100000
+0'
+0+
+0*
+0.
+#102000
+0(
+05
+#104000
+1)
+1<
+#110000
+1A
+1:
+b100 2
+b100 $
+b100 =
+b1 4
+b1 &
+b1 >
+b1 1
+b1 #
+b1 6
+b1 3
+b1 %
+b1 7
+1'
+1+
+#112000
+0)
+0<
+#119000
+10
+b1 ;
+b1 !
+b1 ,
+b1 9
+18
+1(
+15
+#120000
+b1 B
+b1 "
+b1 -
+b100 @
+1?
+1)
+1<
+0'
+0+
+#128000
+0)
+0<
+#130000
+0:
+0A
+b0 3
+b0 %
+b0 7
+b0 4
+b0 &
+b0 >
+1/
+b1001 @
+b1110 9
+b1001 2
+b1001 $
+b1001 =
+b1110 1
+b1110 #
+b1110 6
+1'
+1+
+#136000
+b0 B
+b0 "
+b0 -
+0?
+1)
+1<
+0(
+05
+#140000
+0'
+0+
+#144000
+0)
+0<
+#150000
+1'
+1+
+#152000
+1)
+1<
+#153000
+00
+b0 ;
+b0 !
+b0 ,
+08
+1(
+15
+#160000
+0)
+0<
+0'
+0+
+#168000
+1)
+1<
+#170000
+1A
+1:
+b1010 2
+b1010 $
+b1010 =
+b1 4
+b1 &
+b1 >
+b101 1
+b101 #
+b101 6
+b1 3
+b1 %
+b1 7
+0/
+1'
+1+
+0(
+05
+#176000
+0)
+0<
+#180000
+0'
+0+
+#184000
+10
+b1 B
+b1 "
+b1 -
+b1010 @
+1?
+1)
+1<
+#187000
+b1 ;
+b1 !
+b1 ,
+b101 9
+18
+1(
+15
+#190000
+0:
+0A
+b0 3
+b0 %
+b0 7
+b0 4
+b0 &
+b0 >
+1/
+b1110 @
+b1100 9
+b1110 2
+b1110 $
+b1110 =
+b1100 1
+b1100 #
+b1100 6
+1'
+1+
+#192000
+0)
+0<
+#200000
+b0 B
+b0 "
+b0 -
+0?
+1)
+1<
+0'
+0+
+#204000
+0(
+05
+#208000
+0)
+0<
+#210000
+1'
+1+
+#216000
+1)
+1<
+#220000
+0'
+0+
+#221000
+00
+b0 ;
+b0 !
+b0 ,
+08
+1(
+15
+#224000
+0)
+0<
+#230000
+1A
+1:
+b1100 2
+b1100 $
+b1100 =
+b1 4
+b1 &
+b1 >
+b1110 1
+b1110 #
+b1110 6
+b1 3
+b1 %
+b1 7
+0/
+1'
+1+
+#232000
+10
+b1 B
+b1 "
+b1 -
+b1100 @
+1?
+1)
+1<
+#235000
